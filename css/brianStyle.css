@@ -17,3 +17,68 @@
     height: 100px;
     background: #a6a6a6;
 }
+
+/* -------------------------------- */
+
+textarea {
+    resize: none;
+}
+.emailinput{
+    display:inline-block;
+    max-width:150px;
+}
+.inputholder{
+    margin-top:150px;
+}
+.mainpage{
+    background-color:lightslategray;
+
+}
+.inputbox1{
+    text-align:center;
+    border-radius:5px;
+    background-color:midnightblue;
+    margin-top:45px;
+    width:220px;
+    height:180px;
+    padding-top:12px;
+}
+.inputbox2{
+    text-align:center;
+    border-radius:5px;
+    background-color:midnightblue;
+    margin-top:45px;
+    width:220px;
+    height:180px;
+    padding-top:12px;
+
+
+}
+.inputbox3{
+    text-align:center;
+    border-radius:5px;
+    background-color:midnightblue;
+    margin-top:45px;
+    width:220px;
+    height:180px;
+    padding-top:12px;
+
+}
+#box2-left{
+    margin-right:10px;
+}
+#box2-right{
+    margin-left:10px;
+}
+.progressbar{
+
+    background-color:royalblue;
+    height:10%;
+    margin:0 auto;
+}
+.topmenubar{
+    background-color:steelblue;
+    height:15%;
+
+
+}

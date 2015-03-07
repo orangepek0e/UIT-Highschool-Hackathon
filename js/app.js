@@ -7,7 +7,7 @@ app.config(['$routeProvider',
     function($routeProvider){
         $routeProvider.
             when('/', {
-                templateUrl: 'views/main.html',
+                templateUrl: 'views/main-page.html',
                 controller: 'mainCtrl'
             }).
             otherwise({

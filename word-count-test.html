@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+<div class = "col-md-6">        
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            <span class = "current-value">0%</span>
+        </div>
+    </div>
+    <div class = "form-group">
+        <textarea class = "form-control" rows = "7" maxlength = "100" placeholder = "Enter a text"></textarea>
+    </div>
+    <div class = "count btn btn-primary">100</div>
+</div>
+<script> jQuery(document).ready(function() {
+    
+    $('textarea').keyup(function() {
+        var box = $(this).val();
+        var main = box.length * 100;
+        var value = (main / 100);
+        var count = 0 + box.length;
+        var reverse_count = 100 - box.length;
+        
+        if(box.length >= 0){
+            $('.progress-bar').css('width', count + '%');
+            $('.current-value').text(count + '%');
+            $('.count').text(reverse_count);
+            
+            if (count >= 50% && count < 85){
+                $('.progress-bar').removeClass('progress-bar-danger').addClass('progress-bar-warning');
+            }
+            if (count > 85%){
+                $('.progress-bar').removeClass('progress-bar-warning').addClass('progress-bar-danger');
+            }
+            if(count >= 0 && count < 50%){
+                $('.progress-bar').removeClass('progress-bar-danger');
+                $('.progress-bar').removeClass('progress-bar-warning');         
+                $('.progress-bar').addClass('progress-bar-success')
+            }
+            
+        }
+        return false;
+    });
+});
+</script>
+
+</body>
