@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title></title>
+    <style> 
+    	.emailinput{
+    		display:inline-block;
+    		max-width:150px;
+    	}
+    	.inputholder{
+    		margin-top:150px;
+
+
+    	}
+    </style>
 </head>
 <body>
-	<input type="text" id="Essay-Name-Input" placeholder="Type your Essay name here!">
-
+<div>
+	<div class="row">
+		<div class="col-xs-4"> </div>
+		<div class="col-xs-4 inputholder">
 		<div class="form-group">
-    	<label for="exampleInputEmail1">Email address</label>
-    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    	<label for="exampleInputEmail1">Essay Name</label>
+    	<input type="email" class="form-control emailinput" id="exampleInputEmail1" placeholder="Enter essay name!">
+    	<button id="submit-essay-name">
  		 </div>
+ 		</div>
+ 		<div class="col-xs-4"> </div>
+ 	</div>
+</div>
+ 	
 
-	<button id="submit-essay-name">
+	
 </body>
 </html>
