@@ -1,0 +1,27 @@
+<!--The fist thing the user sees-->
+<div class="container-fluid inputPage" ng-class="{hidden: showMain}">
+    <div class="row ">
+        <div class="col-xs-5">
+            <label for="startingStatment">
+                statment
+            </label>
+            <textarea id="startingStatment" ng-model="essay.second"></textarea>
+            <button class="button" ng-click="showMain = true"></button>
+        </div>
+    </div>
+</div>
+
+<!--The main page-->
+<div class="container-fluid mainPage" ng-class="{show: showMain}">
+    <div class="row ">
+        <div class="col-xs-2">
+            <div class="block" ng-click="change(0)">
+                <p>Opening Statment</p>
+            </div>
+
+            <div class="block" ng-click="change(1)">
+                <p>Body</p>
+            </div>
+        </div>
+    </div>
+</div>

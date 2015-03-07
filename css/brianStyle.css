@@ -1,0 +1,19 @@
+.inputPage{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+}
+
+.mainPage{
+    width: 100%;
+    height: 100vh;
+    background: #00ff00;
+    display: none
+}
+
+
+.block{
+    width: 100px;
+    height: 100px;
+    background: #a6a6a6;
+}
