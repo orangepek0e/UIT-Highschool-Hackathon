@@ -10,17 +10,19 @@ app.controller('mainCtrl',['$scope','$http', function($scope, $http) {
         ''
     ];
 
-    $scope.selected = $scope.essay.first;
+    $scope.select = 0;
 
-    $scope.getEssay = function(selected){
-        $scope.selected = $scope.essay[selected];
+    $scope.saveData = function(){
+        $scope.essay[$scope.selecteda] = $scope.vals;
     };
 
     $scope.change= function(index){
-
+        $scope.select = index;
+        $scope.showMain = false;
+        console.log($scope.essay[index]);
     };
 
-    $scope.showMain = false;
+    $scope.showMain = true;
 
 
 }]);
