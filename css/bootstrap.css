@@ -71,6 +71,16 @@ mark {
 small {
   font-size: 80%;
 }
+#toolbar {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    padding: 5px 10px; /* some styling, please note overall height of the object will be 35px due to 5px padding on top/bottom. */
+    background: #ccc; /* some styling */
+    border-bottom: 1px solid #333; /* some styling */
+}
 sub,
 sup {
   position: relative;
@@ -165,6 +175,7 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 fieldset {
   padding: .35em .625em .75em;
   margin: 0 2px;
